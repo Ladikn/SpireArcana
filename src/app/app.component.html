@@ -1,15 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<body [ngClass]='theme'>
 <mat-sidenav-container>
     <mat-sidenav #sidenav mode="side" opened="true">
         <h2>Locations</h2>
         <mat-list>
             <mat-list-item>
-                <button mat-raised-button>Tower</button>
+                <button mat-raised-button routerLink='/forest' (click)='setTheme("forest-theme")' color='accent'>Forest</button>
             </mat-list-item>
             <mat-list-item>
-                <button mat-raised-button>Forest</button>
+                <button mat-raised-button routerLink='/tower' (click)='setTheme("tower-theme")' color='accent'>Tower</button>
             </mat-list-item>
         </mat-list>
     </mat-sidenav>
-    <mat-toolbar>Forest</mat-toolbar>
+    <router-outlet></router-outlet>
 </mat-sidenav-container>
+</body>
