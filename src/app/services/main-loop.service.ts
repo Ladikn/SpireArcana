@@ -9,15 +9,12 @@ export class MainLoopService {
     this.start();
   }
 
-  private tick = 0;
-
   private tower = new Subject();
   public broadcast = this.tower.asObservable();
 
   public start() {
     window.setInterval(() => {
-      this.tick++;
-      this.tower.next(this.tick);
+      this.tower.next();
     }, 100);
   }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MainLoopService } from '../../services/main-loop.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-forest',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForestComponent implements OnInit {
 
-  constructor() { }
+  constructor(tick: MainLoopService) {
+    tick = new MainLoopService();
+    tick.broadcast.subscribe();
+  }
 
   ngOnInit() {
   }
