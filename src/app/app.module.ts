@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
   MatButtonModule,
@@ -25,6 +26,7 @@ import { ForestComponent } from './locations/forest/forest.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     MatButtonModule,
     MatToolbarModule,
     MatSidenavModule,

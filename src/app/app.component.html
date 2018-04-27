@@ -6,8 +6,12 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar>
-            <span>{{location}}</span>
+            <div class="container">
+                <span>{{location}}</span>
+            </div>
         </mat-toolbar>
-        <router-outlet></router-outlet>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

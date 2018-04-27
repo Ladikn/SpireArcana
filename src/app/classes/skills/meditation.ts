@@ -8,7 +8,7 @@ export class Meditation implements Skill {
     public Difficulty = 1;
 
     public Abilities = {};
-    
+
     constructor() {
         let Introspection: Ability = {
             Name: 'Introspection',
@@ -17,6 +17,6 @@ export class Meditation implements Skill {
             Aquired: false
         }
 
-        this.Abilities["Introspection"] = Introspection;
+        this.Abilities['Introspection'] = Introspection;
     }
 }

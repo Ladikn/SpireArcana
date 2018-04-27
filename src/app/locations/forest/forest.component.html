@@ -1,4 +1,8 @@
 <mat-expansion-panel [hideToggle]="false">
-    <mat-expansion-panel-header>Panel header</mat-expansion-panel-header>
-     Panel body
+    <mat-expansion-panel-header>Medow</mat-expansion-panel-header>
+     <p>A peaceful medow deep in the forest.</p>
+     <div fxLayout="row" fxLayoutGap="15px" fxLayoutAlign="start center">
+        <button mat-button fxFlex="10%" (click)="explore()" @fx>Explore</button>
+        <mat-progress-bar fxFlex="90%" mode="determinate" [value]="exploring"></mat-progress-bar>
+     </div>
 </mat-expansion-panel>
